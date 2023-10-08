@@ -50,7 +50,11 @@ kotlin {
         }
         val jvmMain by getting
         val jvmTest by getting
-        val jsMain by getting
+        val jsMain by getting  {
+            dependencies {
+                implementation(npm("base-64", "1.0.0"))
+            }
+        }
         val jsTest by getting
         val nativeMain by getting
         val nativeTest by getting
