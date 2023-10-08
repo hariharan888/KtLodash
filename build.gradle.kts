@@ -1,9 +1,10 @@
 plugins {
     kotlin("multiplatform") version "1.9.0"
+    id("maven-publish")
 }
 
-group = "me.hari"
-version = "1.0-SNAPSHOT"
+group = "in.nativlabs.ktlodash"
+version = "0.0.1"
 
 repositories {
     mavenCentral()
